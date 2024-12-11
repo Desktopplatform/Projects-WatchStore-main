@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>category products</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <section id="navbars">
+        <nav class="navbar navbar-expand-lg p-3 fixed-top">
+            <div class="container">
+                <a class="nav-logo " href="#">Watch</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list text-white fs-3"></i>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#category">category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                    <div class="register mx-2">
+                        <a href="#" class="btn-header">register</a>
+                    </div>
+                    <!--Search-->
+                    <div id="Search">
+                        <button class="bi bi-search search-icon text-center" onclick="openModalsearch()"></button>
+                        <div id="myModalSearch" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModalsearch()">&times;</span>
+                                <h2>Search</h2>
+                                <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchProducts()">
+                                <button class="btn-search" onclick="performSearch()">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cart-->
+                    <div class="cart-nav mx-2">
+                        <a href="#"><i class="bi bi-cart3"></i></a>
+                        <span id="item-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <main>
+        <!--hero-->
+        <section id="hero" class="p-5 mt-5">
+            <div class="container">
+                <div class="row d-flex  justify-content-between align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <p class="m-0" data-aos="fade-up" data-aos-delay="100"> Smartwatch</p>
+                        <p data-aos="fade-up" data-aos-delay="100">Fitbit lonic</p>
+                        <span class="mt-3" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt
+                            ut
+                            labore et dolore magna aliqua</span>
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#" class="btn-header mt-4 d-inline-block"><i class="bi bi-cart-fill mx-2"></i>Buy
+                                now
+                                for
+                                $244</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="100">
+                        <img src="./images/717uH2mKhbL_prev_ui.png" class="img-fluid" alt="img-hero" loading="lazy">
+                        <span class="span-header d-flex m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed
+                            do</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about-->
+        <section id="about" class="p-5">
+            <div class="container section-title text-start">
+                <!--Section Title-->
+                <h3 data-aos="fade-up" data-aos-delay="100">About Us</h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span>Learn more </span><span class="span-section-title"> about
+                        us</span>
+                </p>
+            </div>
+            <div class="container contanier-about">
+                <div class="row gy-4 align-items-center justify-content-between">
+                    <div class="col-lg-5">
+                        <p class="mt-2" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua</p>
+                        <p data-aos="fade-up" data-aos-delay="200"><i class="bi bi-check2-circle mx-2 fs-5"></i>Lorem
+                            ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="300"><i class="bi bi-check2-circle mx-2 fs-5"></i>Lorem
+                            ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="400"><i class="bi bi-check2-circle mx-2 fs-5"></i>Lorem
+                            ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <p data-aos="fade-up" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua,
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua
+                        </p>
+                        <a href="#" class="btn-header d-inline-block mt-3" data-aos="fade-up" data-aos-delay="600">Read
+                            More<i class="bi bi-arrow-right mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--category products-->
+        <section id="category" class="p-5">
+            <div class="container section-title text-start">
+                <!--Section Title-->
+                <h3 data-aos="fade-up" data-aos-delay="100">Product categories</h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span>Lorem ipsum </span><span class="span-section-title"> dolor sit amet</span>
+                </p>
+            </div>
+            <div class="container">
+                <div class="row mt-3 gy-4 justify-content-center align-items-center text-center" id="demo-category">
+                    <!--content category category-id-->
+                </div>
+                <div class="row mt-3 gy-4 justify-content-center align-items-center text-center" id="product-display">
+                    <!--content products products-id-->
+                </div>
+
+            </div>
+        </section>
+        <!--gallery-->
+        <section id="gallery" class="p-5">
+            <div class="container section-title text-start">
+                <!--Section Title-->
+                <h3 data-aos="fade-up" data-aos-delay="100">Product gallery</h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span>Lorem ipsum </span><span class="span-section-title"> dolor sit amet</span>
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4 justify-content-center align-items-center mt-5">
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./images/گالری 1.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./images/گالری2.jpg" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <img src="./images/گالری3.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                        <img src="./images/گالری4.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <img src="./images/گالری5.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                        <img src="./images/گالری6.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                        <img src="./images/گالری7.jpg" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                    <div class="col-lg-3" data-aos="fade-up" data-aos-delay="900">
+                        <img src="./images/گالری8.webp" alt="gallery-img" loading="lazy" class="img-fluid"
+                            onclick="openModalgallery(this.src)">
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModalgallery()">&times;</span>
+                    <img id="modalImage" src="">
+                </div>
+            </div>
+        </section>
+        <!--contact-->
+        <section id="contact" class="p-5">
+            <div class="container section-title text-start">
+                <!--Section Title-->
+                <h3 data-aos="fade-up" data-aos-delay="100">Contact</h3>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    <span>Need Help? </span><span class="span-section-title">contact us</span>
+                </p>
+            </div>
+            <div class="container">
+                <div class="row gy-4 justify-content-center align-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51736.019636945515!2d50.919755836942315!3d35.861231929420335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbf2bbf31fd25%3A0x75826d63f9fe480a!2sGohardasht%2C%20Karaj%2C%20Alborz%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1722418223578!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-contact border-0 mt-5">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>karaj-gohardasht-falakeaval</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-contact border-0 mt-5">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-telephone"></i>
+                                <div>
+                                    <h3>Call Us</h3>
+                                    <p>+1 5589 55488 55</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4 align-item-center justify-content-center mt-2">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-contact border-0">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi  bi-envelope"></i>
+                                <div>
+                                    <h3>Email Us</h3>
+                                    <p>info@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-contact  border-0">
+                            <div class="card-body d-flex align-items-center">
+                                <i class="bi bi-clock"></i>
+                                <div>
+                                    <h3>Opening Hours<br></h3>
+                                    <p><strong>Mon-Sat:</strong> 11AM - 23PM; <strong>Sunday:</strong> Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--form contact-->
+            <div class="container mt-5">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <img src="./images/backgroundcontact.jpg" alt="img-contact" class="img-fluid " loading="lazy">
+                    </div>
+                    <div class="col-lg-8 bg-light">
+                        <form action="#">
+                            <div class="row gy-4 justify-content-center align-items-center">
+                                <div class="col-lg-4">
+                                    <input type="text" id="name" name="name" placeholder="username"
+                                        class="text-white-50">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" id="name" name="name" placeholder="your name"
+                                        class="text-white-50">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="text" id="phon" name="phon" placeholder="your phon"
+                                        class="text-white-50">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="date" id="date" name="date" placeholder="date" class="text-white-50">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="time" id="time" name="time" placeholder="time" class="text-white-50">
+                                </div>
+                                <div class="col-lg-4">
+                                    <input type="number" name="people" id="people" placeholder="# of people"
+                                        class="text-white-50">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea name="message" rows="5" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                            <button type="submit" placeholder="book a table"
+                                class="btn-header d-flex m-auto mt-3 border-0  text-center justify-content-center">send
+                                message<i class="bi bi-arrow-right mx-1"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Scroll Top -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+        <!--footer-->
+        <footer class="p-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-center align-items-center">
+                    <div class="col-lg-3">
+                        <h4>Follow Us</h4>
+                        <div class="social-links mt-4 d-flex">
+                            <a href="#" class="twitter mx-1"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="facebook mx-1"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram mx-1"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin mx-1"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex">
+                        <i class="bi bi-telephone bi-icon mx-3"></i>
+                        <div>
+                            <h4>Contact</h4>
+                            <p class="footer-p">
+                                <strong>Phone:</strong> <span>+26 098776544</span><br>
+                                <strong>Email:</strong> <span>watch@gamil.com</span><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex">
+                        <i class="bi bi-geo-alt mx-3 bi-icon"></i>
+                        <div class="address">
+                            <h4>Address</h4>
+                            <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                            <p class="footer-p">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex">
+                        <div>
+                            <h4>Lorem ipsum</h4>
+                            <p class="footer-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
